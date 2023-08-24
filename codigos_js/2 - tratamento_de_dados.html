@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorum rerum amet nihil doloremque officia consequuntur facere magnam tempora sed aspernatur eum omnis ducimus dolorem, cumque harum, excepturi ut recusandae!</p>
+
+    <script>
+        //conversão de string para int
+        var n1 = Number.parseInt(window.prompt("Digite n1: "))
+        var n2 = Number.parseInt(window.prompt("Digite n2: "))
+        var n3 = n1+n2
+        window.alert("Soma = " + n3)
+
+        //conversão de string para float
+        var n4 = Number.parseFloat(window.prompt("Digite n4: "))
+        var n5 = n3+n4
+        window.alert("Soma = " + n5)
+
+        //Método mais atual e prático. A função já identifica se é int ou float
+        var n6 = Number(window.prompt("Digite n4: "))
+
+        //conversao para numero para string:
+        //String(n) ou n.toString()
+
+        //mais opcoes para strings
+        var nome = 'Gustavo'
+        nome.length     //retorna o tamanho (7)
+        nome.toUpperCase()      //retorna em maíusculas (GUSTAVO), mas nao altera a variável (continua GUstavo)
+        nome.toLowerCase()      //retorna gustavo
+
+        //mais opcoes para numeros:
+        var numero = 1500.1567
+        numero.toFixed(2)   //retorna 1500.15 (nao altera variável)
+
+        //Dados booleanos: true e false (não True e False como no python)
+
+    </script>
+</body>
+</html>

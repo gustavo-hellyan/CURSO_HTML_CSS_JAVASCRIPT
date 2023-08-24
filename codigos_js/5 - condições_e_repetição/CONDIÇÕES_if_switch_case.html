@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <h1>If basico</h1>
+    <p>If e switch case são iguais aos que vi em linguagem C</p>
+    <p>Qual número é maior?</p>
+    <input type="number" name="number1" id="number1" width="40px"> <br>
+    <input type="number" name="number2" id="number2" width="40px"> <br>
+    <input type="button" value="Comparar" onclick="comparar()">
+
+    <p id="resultado"></p>
+
+    <h1>Switch case</h1>
+    <p>Deseja saber o que?</p>
+    <select name="opcao" id="opcao">
+        <option value="1">Gustavo</option>
+        <option value="2">Idade</option>
+        <option value="3">Curso</option>
+        <option value="4">Opção inválida</option>
+        <option value="5">Opção inválida</option>
+    </select>
+    <input type="button" value="Prosseguir" onclick="opcao()">
+    <p id="resultado2">O RESULTADO SERÁ IMPRESSO AQUI</p>
+
+    <script>
+        
+        var texto_resultado = document.getElementById('resultado')
+        var texto_resultado2 = document.getElementById('resultado2')
+        
+        function comparar(){
+            var number1 = Number(document.getElementById('number1').value)
+            var number2 = Number(document.getElementById('number2').value)
+        
+            if(number1 > number2){
+                texto_resultado.innerHTML = 'O <em>primeiro</em> número é maior!'
+            }else if(number1 < number2){
+                texto_resultado.innerHTML = 'O <em>segundo</em> número é maior!'
+            }else{
+                texto_resultado.innerHTML = '<strong>Os números são iguais!</strong>'
+            }
+        }
+
+        function opcao(){
+            var opcao_selecionada = Number(document.getElementById('opcao').value)
+
+            switch(opcao_selecionada){
+                case 1:
+                    texto_resultado2.innerHTML = 'Meu nome é <strong>Gustavo</strong>'
+                    break;
+                case 2:
+                    texto_resultado2.innerHTML = 'Eu tenho <strong>21 anos</strong>'
+                    break;
+                case 3:
+                    texto_resultado2.innerHTML = 'Eu curso <strong>Engenharia Elétrica</strong> na UFMA  '
+                    break;
+                default:
+                    texto_resultado2.innerHTML = '<strong>Opção inválida</strong>'
+            }
+        }
+    </script>
+</body>
+</html>

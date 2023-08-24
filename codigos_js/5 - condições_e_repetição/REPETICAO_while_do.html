@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições!</title>
+</head>
+<body>
+    <h1>Estruturas de repetição</h1>
+    <p>Temos o while, do while e for. Todos tem a mesma sintaxe que vi em linguagem C</p>
+
+    <h1>Contando até 10</h1>
+    <div>
+        <input type="button" value="Iniciar contagem" onclick="iniciar_contagem()">
+        <p id="contagem"></p>
+    </div>
+
+    <script>
+        function iniciar_contagem(){
+            var valor_atual = 1;
+            document.getElementById('contagem').innerHTML = `${valor_atual}...<br>`;
+            while(valor_atual < 10){
+                valor_atual++;
+                document.getElementById('contagem').innerHTML += `${valor_atual}...<br>`;
+            }
+            document.getElementById('contagem').innerHTML += `FIM DA CONTAGEM!`
+        }
+        
+    </script>
+</body>
+</html>

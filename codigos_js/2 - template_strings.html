@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dolorum rerum amet nihil doloremque officia consequuntur facere magnam tempora sed aspernatur eum omnis ducimus dolorem, cumque harum, excepturi ut recusandae!</p>
+
+    <script>
+        //Template String
+        var nome = window.prompt("Qual o seu nome?")    //string
+        var idade = Number(window.prompt("Qual a sua idade?"))  //string
+        
+        //Usamos crase (`) e ${}. Semelhante ao fstring de python
+        window.alert(`Olá, ${nome}! Você tem ${idade} anos.`)
+
+        //escreve na página
+        document.write(`Olá <strong>${nome.toUpperCase()}</strong>! <br>Seu nome tem ${nome.length} letras.`)
+    </script>
+</body>
+</html>

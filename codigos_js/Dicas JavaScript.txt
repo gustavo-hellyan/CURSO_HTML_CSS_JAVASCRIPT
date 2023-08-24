@@ -1,0 +1,43 @@
+JavaScript - Dicas
+Curso em Vídeo e Node Treinamentos
+
+
+
+JS é interpretado (linha por linha) e não compilado
+
+Navegadores tem seus motores para rodar Javascript
+"O v8 é o motor por baixo do capô do Google Chrome"
+
+Tecnologias de JS para estudar, se especializar dps:
+- Angular, jQuery, React, Vue, Electron, Ionic
+=======================
+//comentários em JS
+/* comentários em JS e CSS*/
+CTRL / ou CNTRL ;: comenta várias linhas
+<!-- comentários em HTML --> 
+
+
+Declaração de variável
+var nome = 'Gustavo'
+nome = null	//para esvaziar variável
+
+/*Para caracteres: aspas duplas, simples ou crase */
+
+
+//.exit fecha o node.js
+
+typeof nome		//'string'
+typeof 'Gustavo'	//'string'
+typeof 15		//'number'
+
+Ponto e vírgula (;) é opcional no JS
+=======================
+Ele mandou antoar isso aqui para converter para moeda brasileira
+var preco = 15.67
+preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+preco.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+preco.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+=======================
+Tem uma forma de visualizar como a página vai ser exibida em dispositivos móveis pelo "Inspecionar" do navegador
+
+JavaScript vai ser difícil. Pratique. Muitas coisinhas pequenas que podem complicar... Ex: Number, innerText, innerHTML, .value

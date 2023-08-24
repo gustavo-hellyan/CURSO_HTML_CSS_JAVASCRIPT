@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando o DOM</title>
+</head>
+<body>
+    <h1>Usando o DOM</h1>
+
+    <p>DOM: Document Object Model</p>
+    <p>Exemplo de <strong>árvore DOM</strong>:</p>
+    <img src="Árvore DOM exemplo.jpg" alt="" width="250">
+    <p>Podemos selecionar um elemento por</p>
+    <ul>
+        <li>marca (tag)</li>
+        <li>ID</li>
+        <li>Nome</li>
+        <li>Classe</li>
+        <li>Seletor</li>
+    </ul>
+
+    <div id="msg">Olê, olê, olá</div>
+
+    <script> 
+        document.write("<strong>Rodando o programa:</strong><br>")  //escreve na página!
+        // Use CNTRL + / OU CNTRL + ; para comentar/descomentar comentários com //    
+
+    /*
+    //escreve no console do navegador:
+        window.console.log("Eu sou o console!")  
+
+
+    //retorna a largura da janela
+        window.screen.width     
+      
+
+    //lembre-se que window pode ser omitido
+    */
+
+
+    /*
+    //Selecionar elemento por tag:
+    //Vamos pegar o primeiro paragráfo
+        var p1 = document.getElementsByTagName('p')[0]
+        document.write(`<br>Primeiro paragráfo: ${p1.innerText}`)
+      //  p1.style.color = 'blue'     //muda a cor do paragráfo 1
+    //perceba que p1 não é uma cópia do primeiro parágrafo, e sim uma referência.
+
+    //innerText retorna somente o texto, porém innerHTML retorna texto com formatação HTML
+        var p2 = document.getElementsByTagName('p')[1]
+        document.write(`<br>Segundo paragráfo: ${p2.innerHTML}`)
+    */
+
+    
+    //Corpo da página 
+    /*
+        var corpo_pagina = document.body
+        corpo_pagina.style.background = 'red'
+    */
+
+    /*
+    //Selecionando por ID
+        var id1 = window.document.getElementById("msg")
+        document.write(id1.innerText)     
+        id1.style.color = 'white'
+        id1.style.background = 'green'
+    //edita o texto da id = 'msg':
+        id1.innerText = "Texto editado!"
+    */      
+
+    // Podemos também escolher nome por     
+    //     document.getElementsByName('msg')[n]
+    //     document.getElementsByClassName()[n]
+
+    // // Por seletor
+    // var s1 = document.querySelector('div#msg')
+    // // Usamos # para id e . para class
+    // s1.style.color = 'white'
+    // s1.style.background = 'black'
+    // //esse método é recente, logo navegadores antigos não tem acesso ao querySelector
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia e hora</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(to right, blue, rgb(0, 0, 135));
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        header{
+            color: white;
+
+        }
+        section{
+            background-color: white;
+            margin: auto;
+            width: 500px;
+            color: black;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 3px 3px 25px black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Que horas são?</h1>
+    </header>
+
+    <section>
+        <div id="texto_hora">texto</div>
+        <div id="imagem_hora">imagem></div>
+    </section>
+
+    <footer>
+        <p>&copy;Gustavo Hellyan</p>
+    </footer>
+
+    <script>
+        var agora = new Date();
+        var hora_atual = agora.getHours();
+
+        // tambem podemos usar var hora_atual = date.getHours()
+
+        document.getElementById('texto_hora').innerHTML = `Agora são ${hora_atual} horas.`
+        if(hora_atual < 12){
+            document.getElementById('imagem_hora').innerHTML = '<img src="dia.png" alt="" width="300px">'
+            document.body.style.background = 'rgb(206, 164, 109)' 
+        }else if (hora_atual >= 12 && hora_atual < 18){
+            document.getElementById('imagem_hora').innerHTML = '<img src="tarde.png" alt="" width="300px">'
+            document.body.style.background = 'rgb(136, 97, 46)'
+        }else{
+            document.getElementById('imagem_hora').innerHTML = '<img src="noite.png" alt="" width="300px">'
+            document.body.style.background = 'rgb(52, 33, 9)'
+        }
+
+        /*para o Date(), nos temos outros comandos, o getDay retorna o numero do dia (domingo - 0, ... sabado - 6)*/
+    </script>
+</body>
+</html>

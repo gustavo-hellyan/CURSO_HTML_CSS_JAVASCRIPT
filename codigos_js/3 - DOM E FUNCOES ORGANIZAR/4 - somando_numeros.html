@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando valores</title>
+    <style>
+        input{
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="n1" id="n1ID"> +  <input type="number" name="n2" id="n2ID">
+    <input type="button" value="Somar" onclick="somar()">
+    <p>Resultado:</p>
+    <div id="resultado">...</div>
+
+    <script>        
+        function somar(){
+            var texto_number1 = document.getElementById('n1ID')
+            //Também funciona por query selector:
+            var texto_number2 = document.querySelector('input#n2ID')
+
+            //Agora vamos converter esses valores para numero:
+            var number1 = Number(texto_number1.value)   //entendi que: o elemento é o input, cujo id é N1ID, value é o valor digitado no input
+            var number2 = Number(texto_number2.value)
+
+            var resultado = number1 + number2
+
+            var div_resultado = document.getElementById('resultado')
+            div_resultado.innerHTML = `${number1} + ${number2} = <strong>${resultado}</strong>`
+        }
+    </script>
+</body>
+</html>

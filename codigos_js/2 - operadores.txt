@@ -1,0 +1,46 @@
+Operadores binários:
+comuns: +, -, *, /
+resto de divisão inteira: %
+potência: **
+
+Ordem de precedência dos operadores (a mesma que você vê em quase toda linguagem)
+1: ()
+2: **
+3: * / %
+4: + - 
+
+Operadores de acumulação:
++=
+-=
+*=
+/=
+n = n**2    --->    n**=2
+n = n%2     --->    n%=2
+
+Operadores de incrementação
+x++, ++x, x--, --x
+Diferença entre x++ e ++x: a mesma que viu em C - pré incremento e pós incremento
+
+Operadores relacionais
+>, <, >=, <=, ==, !=
+Ordem de precedência: não há. É lido da esquerda pra direita.
+
+Operador de igualdade restrita: ===
+NO JS, 5 == '5' é true - no python, seria False. Mas 5==='5' é false.
+
+Operadores lógicos
+!       negaçã, não - é um operador unário
+&&      e (conjunção)
+||      or (disjunção)
+Ordem de precedência: os três estão na devida ordem de precedência
+
+Ordem de precedência geral:
+1. aritimétricos
+2. relacionais
+3. lógicos
+
+Operador ternário: usa três operandos
+    teste lógico? se true : se false
+ex: var situacao = media >= 7? "Aprovado":"Reprovado"
+
+PS: até agora tem muita coisa semelhante com C. Que bom - evita confusões.

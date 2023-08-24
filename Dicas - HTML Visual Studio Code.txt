@@ -1,0 +1,35 @@
+Crie o arquivo index.html dentro da pasta do seu codigo
+
+Atalho para criar código base (estrutura basica) no Visual Studio Code:
+- digite exclamação e enter ou digite html:5
+
+Parte head: configurações do site
+Body: conteudo do site
+
+PS: algumas dessas coisas eu ja tinha visto no anki kkk. Não sabia que era HTML.
+
+
+Dicas de Imagens
+- Tem como pegar imagens sem problemas de direitos autorais no google.
+- Tome cuidado com o tamanho (armazenamento) da imagem ao criar sites, pois podem ser dificeis de carregar no navegador do cliente
+- Você pode redimensionar a imagem no GIMP, que é uma ferramenta gratuita de edição de iamgens
+- Tamanho (largura ou comprimento) máximo ideal de fotos para por em sites: 1500
+
+Vantagem do
+- jpg: alta compactação
+- png: permite transparência e tem mais qualidade
+- gif: transparência e animação
+
+Envelopar texto:
+Como colocar tag em um texto já feito: Selecione o texto, Control Shift P, Envolver com Abreviação, escreva a tag
+
+
+Editar mais de uma tag ao mesmo tempo (tem que ser iguais): clique em uma, segure alt, clique em outra, pode editar
+
+HandBrake - app gratuito e código aberto pra conversão de vídeos (dica do Guanabara)
+
+Ao criar link para um arquivo .html que ainda nao exista, você pode segurar control e clicar no link para criar o arquivo no Visual Studio Code
+
+CNTRL ALT H - simula um navegador no Visual Studio Code (necessário uma )
+
+CTRL / ou CNTRL ;: comenta várias linhas

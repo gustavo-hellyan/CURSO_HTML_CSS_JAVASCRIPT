@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+
+    <style>
+        div#interacao{
+            color: white;
+            background-color: rgb(15, 195, 15);
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+        }
+        div#interacao2{
+            color: white;
+            background-color: rgb(15, 195, 15);
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Eventos DOM</h1>
+
+    <p>Evento DOM: tudo o que pode acontecer com uma div.</p>
+    <blockquote>
+        Por exemplo: ao colocar o mouse em cima da div, é ativado mouseenter <br>
+        Ao mover o mouse em cima da div: mousemove <br>
+        Pressionar o botão do mouse: mousedown <br>
+        Soltar o botão do mouse: mouseup <br>
+        Apertar e soltar rapidamente: click <br> 
+        Tirar o mouse da div: mouseout <br>
+        Carregar a pagina: load <br>
+        Pesquise "javascript dom events lists" para ver mais eventos
+    </blockquote>
+
+    <p>Interação no próprio HTML:</p>
+    <div id="interacao" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja!
+    </div>
+
+    <p>Interação usando listeners (dentro do próprio javascript)</p>
+    <div id="interacao2">
+        Interaja!
+    </div>
+    
+    <p>Dica: como saber se houve erro no seu código: aperte inspecionar no navegador e provavelmente aparecerá em console</p>
+
+    <script>
+        var texto = document.getElementById("interacao")
+
+        //Listeners:
+        var texto = document.getElementById("interacao2")
+        texto.addEventListener('click', clicar)
+        texto.addEventListener('mouseenter', entrar)
+        texto.addEventListener('mouseout', sair)
+
+        function clicar(){
+            texto.innerText = "Clicou!"
+            texto.style.background = 'red'
+        }        
+        function entrar(){
+            texto.innerText = "Entrou!"
+            texto.style.background = 'blue'
+        }
+        function sair(){
+            texto.innerText = "Saiu !"
+            texto.style.background = 'rgb(15, 195, 15)'
+        }
+    </script>
+</body>
+</html>
