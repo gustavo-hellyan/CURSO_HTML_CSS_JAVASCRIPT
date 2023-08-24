@@ -33,5 +33,3 @@ Ao criar link para um arquivo .html que ainda nao exista, você pode segurar con
 CNTRL ALT H - simula um navegador no Visual Studio Code (necessário uma )
 
 CTRL / ou CNTRL ;: comenta várias linhas
-
-TESTEEEEEEE
